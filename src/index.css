@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 244, 247, 250;
+    --foreground: 5, 18, 69;
+    --primary: 28, 117, 189;
+    --primary-dark: 5, 18, 69;
+    --primary-light: 20, 171, 255;
+    --accent: 20, 171, 255;
+    --accent-light: 20, 171, 255, 0.8;
+    --muted: 241, 245, 249;
+    --muted-foreground: 5, 18, 69, 0.7;
+    --card: 255, 255, 255;
+    --card-foreground: 5, 18, 69;
+  }
+
+  .dark {
+    --background: 5, 18, 69;
+    --foreground: 255, 255, 255;
+    --primary: 28, 117, 189;
+    --primary-dark: 5, 18, 69;
+    --primary-light: 20, 171, 255;
+    --accent: 20, 171, 255;
+    --accent-light: 20, 171, 255, 0.8;
+    --muted: 5, 18, 69;
+    --muted-foreground: 255, 255, 255, 0.7;
+    --card: 28, 117, 189;
+    --card-foreground: 255, 255, 255;
+  }
+}
+
+.light-hero {
+  background-color: #051245;
+  box-shadow: inset 0 0 100px rgba(20, 171, 255, 0.1);
+}
+
+.light .ice-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(28, 117, 189, 0.2);
+  box-shadow: 
+    0 4px 20px rgba(5, 18, 69, 0.1),
+    inset 0 0 20px rgba(20, 171, 255, 0.1);
+}
+
+.light .glass-effect {
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  border-color: rgba(28, 117, 189, 0.2);
+}
+
+.light .nav-link {
+  color: #051245;
+}
+.light .nav-link:hover {
+  color: #1C75BD;
+}
+
+.light .nav-glass {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(28, 117, 189, 0.2);
+}
+
+.light .btn-primary {
+  background: linear-gradient(135deg, #1C75BD, #14ABFF);
+  box-shadow: 0 4px 15px rgba(20, 171, 255, 0.3);
+}
+
+.light .btn-secondary {
+  background: linear-gradient(135deg, rgba(5, 18, 69, 0.1), rgba(28, 117, 189, 0.1));
+  border-color: rgba(28, 117, 189, 0.2);
+}
+
+.light .service-card {
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 4px 20px rgba(5, 18, 69, 0.1);
+  border: 1px solid rgba(28, 117, 189, 0.1);
+  transition: all 0.3s ease;
+}
+
+.light .service-card:hover {
+  box-shadow: 0 8px 30px rgba(20, 171, 255, 0.2);
+  border-color: rgba(28, 117, 189, 0.2);
+  transform: translateY(-5px);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1C75BD;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #14ABFF;
+}
+
+.logo-image {
+  @apply w-32 h-auto transition-transform duration-300;
+}
+
+.scrolled .logo-image {
+  @apply w-28;
+}
+
+.bg-grid-light {
+  background-image: 
+    linear-gradient(to right, rgba(28, 117, 189, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(28, 117, 189, 0.1) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.bg-grid-dark {
+  background-image: 
+    linear-gradient(to right, rgba(20, 171, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(20, 171, 255, 0.1) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #1C75BD, #14ABFF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.service-icon {
+  color: #1C75BD;
+  transition: color 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+  color: #14ABFF;
+}

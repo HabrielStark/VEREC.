@@ -1,0 +1,5 @@
+<svg width="400" height="100" viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg">
+  <path d="M80 20 L120 80 L160 20 M200 20 L240 80 M280 20 L320 80" fill="none" stroke="#14ABFF" stroke-width="8"/>
+  <text x="340" y="60" font-family="Arial" font-size="48" fill="#051245">VEREC</text>
+  <text x="340" y="80" font-family="Arial" font-size="24" fill="#1C75BD">ACCOUNTING</text>
+</svg>
